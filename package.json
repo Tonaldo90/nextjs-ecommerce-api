@@ -4,7 +4,7 @@
   "description": "API for NextJs Ecommerce",
   "main": "index.js",
   "scripts": {
-    "vercel-build": "tsc"
+    "vercel-build": "prisma generate && tsc"
   },
   "keywords": [],
   "author": "",
