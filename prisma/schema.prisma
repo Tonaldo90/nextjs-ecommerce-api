@@ -1,0 +1,17 @@
+
+datasource db {
+     provider = "postgresql" // or your preferred database provider
+     url      = env("DATABASE_URL")
+   }
+
+   generator client {
+     provider = "prisma-client-js"
+   }
+
+  model products {
+  id        Int      @id @default(autoincrement())
+  sku       String  @unique
+  name     String   
+  price      String?
+
+}
