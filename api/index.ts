@@ -1,4 +1,6 @@
 const express = require("express");
+const { request: Req } = require("express");
+const { response: Res } = require("express");
 var cors = require("cors");
 const app = express();
 app.use(cors());
@@ -12,7 +14,7 @@ if (!process.env.DATABASE_URL) {
   throw "Can not proceed without database url, please provide value as environment variable";
 }
 
-app.get("/", (req, res) => {
+app.get("/", (req: typeof Req, res: typeof Res) => {
   res.send("This is not the API you're looking for");
 });
 
