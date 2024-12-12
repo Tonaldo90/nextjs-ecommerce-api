@@ -21,6 +21,11 @@ NodeJS Express API for fetching products for NextJS commerce showcase
 
 - `DATABASE_URL` (url to external database)
 
+
+## Demo
+
+https://nextjs-ecommerce-api-ten.vercel.app/
+
 ## Local Deploy
 
 1. Install dependencies:
