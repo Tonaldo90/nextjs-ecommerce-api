@@ -4,6 +4,7 @@
   "description": "API for NextJs Ecommerce",
   "main": "index.js",
   "scripts": {
+    "dev": "node api/index.ts",
     "vercel-build": "tsc",
     "postinstall": "prisma generate"
   },

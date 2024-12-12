@@ -12,6 +12,6 @@ datasource db {
   id        Int      @id @default(autoincrement())
   sku       String  @unique
   name     String   
-  price      String?
+  price      String
 
 }
